@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<p>&lt;img width=“820” alt=“screen shot 2016-02-22 at 8 44 42 pm” src=&quot;<a href="https://cloud.githubusercontent.com/assets/9964792/13232030/306b0d50-d9a5-11e5-9706-d44d7731790d.png">https://cloud.githubusercontent.com/assets/9964792/13232030/306b0d50-d9a5-11e5-9706-d44d7731790d.png</a>&quot;&gt;</p>
+<p>Future &amp; functional based programming via JDK compatible extensions for Java 8 and above.</p>
+<h1><a id="Getting_cyclopsreact_4"></a>Getting cyclops-react</h1>
+<ul>
+<li>
+<p><a href="https://maven-badges.herokuapp.com/maven-central/com.aol.simple-react/cyclops-react"><img src="https://maven-badges.herokuapp.com/maven-central/com.aol.simplereact/cyclops-react/badge.svg" alt="Maven Central : cyclops-react"></a></p>
+</li>
+<li>
+<p>Stackoverflow tag <a href="http://stackoverflow.com/search?q=cyclops-react">cyclops-react</a></p>
+</li>
+</ul>
+<h2><a id="Gradle_11"></a>Gradle</h2>
+<p>where x.y.z represents the latest version</p>
+<p>compile ‘com.aol.simplereact:cyclops-react:x.y.z’</p>
+<h2><a id="Maven_17"></a>Maven</h2>
+<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">groupId</span>&gt;</span>com.aol.simplereact<span class="hljs-tag">&lt;/<span class="hljs-title">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">artifactId</span>&gt;</span>cyclops-react<span class="hljs-tag">&lt;/<span class="hljs-title">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">version</span>&gt;</span>x.y.z<span class="hljs-tag">&lt;/<span class="hljs-title">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dependency</span>&gt;</span>
+</code></pre>
+<p><img src="https://cloud.githubusercontent.com/assets/9964792/14741656/cf3d8494-088f-11e6-9189-b2bed00365d1.png" alt="cyclops-react-types"></p>
+<h1><a id="Features_29"></a>Features</h1>
+<p>Used in Aol to build robust, performant &amp; scalable asynchronous systems : features include</p>
+<ul>
+<li>
+<p>Compatible extensions to JDK interfaces (Collections, Streams, Functions)</p>
+</li>
+<li>
+<p>Built with <a href="https://github.com/jOOQ/jOOL">jOOλ</a>, <a href="http://www.reactive-streams.org/">reactive-streams</a> ,<a href="https://github.com/real-logic/Agrona">Agrona</a> and <a href="https://github.com/hrldcpr/pcollections">pCollections</a></p>
+</li>
+<li>
+<p>Extensions for efficient JDK compatible persistent collections (<a href="http://pcollections.org/">pCollections</a>)</p>
+</li>
+<li>
+<p>FutureStreams for managing aggregates for Future Tasks (e.g. for multi-threaded execution of large numbers of I/O tasks)</p>
+</li>
+<li>
+<p>Single-threaded asynchronous streaming</p>
+</li>
+<li>
+<p>Scheduling of data emission</p>
+</li>
+<li>
+<p>Powerful extended type hierarchy for aggregrations (Collections &amp; Streams) and single values</p>
+</li>
+<li>
+<p>Powerful functional-style control structures, implemented in Java friendly manner (Maybe, Eval, FutureW, Xor, Ior, Try, AnyM, structural &amp; guard based pattern matching, for-comprehensions)</p>
+</li>
+<li>
+<p>Execute functions between wrapped values (Optional / CompletableFutre etc) without tedious unwrapping (Java friendly Applicative support).</p>
+</li>
+<li>
+<p>Java friendly abstractions for wrapping any Monad type (Stream, CompletableFuture, Optional, cyclops-react types and types from other Java projects too). AnyM and it’s two subtypes AnyMSeq for aggregates (Steam, List etc) and AnyMValue for Values</p>
+</li>
+<li>
+<p>Monad Transformers - for manipulating nesting monadic types (e.g. Optionals within a Stream as if it were just an Optional)</p>
+</li>
+<li>
+<p>Applicatives - apply functions across wrapped types (e.g. Optional / Maybe / Xor) without unwrapping &amp; aggregate without terminate on failure</p>
+</li>
+<li>
+<p>Structural pattern matching &amp; pattern matching via Guards (see Matchable and Matchables)</p>
+</li>
+<li>
+<p>Full strength for comprehensions / generators (reference elements from other generators)</p>
+</li>
+<li>
+<p>Tight integration with reactive-streams : collections, streams and datatypes are publishers &amp; can be generated via subscribers</p>
+</li>
+<li>
+<p>Very Extensible &amp; integration with other projects via cyclops-integration modules.</p>
+</li>
+</ul>
+<h1><a id="Documentation_51"></a>Documentation</h1>
+<ul>
+<li><a href="https://github.com/aol/cyclops-react/tree/master/user-guide">user-guide : work in progress</a></li>
+<li><a href="https://github.com/aol/simple-react/wiki">simple-react wiki</a></li>
+<li><a href="https://github.com/aol/cyclops/wiki">cyclops wiki</a></li>
+<li><a href="http://www.javadoc.io/doc/com.aol.simplereact/cyclops-react/">javadoc</a></li>
+</ul>
+<h1><a id="Articles_58"></a>Articles</h1>
+<ul>
+<li><a href="https://medium.com/@johnmcclean/reactive-programming-with-java-8-and-simple-react-the-tutorial-3634f512eeb1">Reactive programming with Java 8 and simple-react: The Tutorial</a></li>
+<li><a href="https://medium.com/@johnmcclean/extending-jdk-8-collections-8ae8d43dd75e#.tn7ctbaks">JDK Collection eXtensions</a></li>
+<li><a href="https://medium.com/@johnmcclean/can-we-make-working-with-functions-easier-in-java-8-81ed9d1050f2#.apum92khr">Awesome Fluent Functions</a></li>
+<li><a href="https://medium.com/search?q=simplereact">Articles on medium</a></li>
+<li><a href="https://medium.com/@johnmcclean/introducing-the-cyclops-monad-api-a7a6b7967f4d">Introducting the Cyclops Monad API</a></li>
+<li><a href="http://rdafbn.blogspot.com/2015/06/java-8-easier-with-cyclops-try.html">Easier Try with Cyclops</a></li>
+<li><a href="https://medium.com/@johnmcclean/4-flavours-of-java-8-functions-6cafbcf5bb4f">4 flavors of Java 8 Functions</a></li>
+<li><a href="http://rdafbn.blogspot.com/2015/06/memoize-functions-in-java-8.html">Memoise Functions in Java 8</a></li>
+<li><a href="http://rdafbn.blogspot.com/2015/06/startegy-pattern-in-java-8.html">Strategy Pattern in Java 8 </a></li>
+<li><a href="https://medium.com/about-java/straightforward-structural-pattern-matching-d77155bac8da#.ogdrhsyfe">Straightfoward structural Pattern Matching in Java 8</a></li>
+<li><a href="https://medium.com/@johnmcclean/feature-toggling-with-cyclops-a29d1eead62c">Functional Feature Toggling</a></li>
+<li><a href="https://medium.com/@johnmcclean/dependency-injection-using-the-reader-monad-in-java8-9056d9501c75">Dependency injection using the Reader Monad in Java8</a></li>
+<li><a href="https://medium.com/@johnmcclean/how-to-schedule-emission-from-a-stream-in-java-aa2dafda7c07#.pi12so6zn">Scheduling a Stream</a></li>
+<li><a href="https://medium.com/@johnmcclean/neophytes-guide-to-java-8-welcome-to-the-future-83f432ce82a9#.jb5s9qop8">Neophytes guide to Java 8 : Welcome to the Future</a></li>
+<li><a href="https://medium.com/@johnmcclean/jdbc-processing-options-with-cyclops-react-49d62b02f775#.1dh1ziaxv">JDBC Processing Options with cyclops-react</a></li>
+<li><a href="http://sebastian-millies.blogspot.de/2015/11/deterministic-and-non-deterministic.html">Deterministic and Non-Deterministic Finite State Machines with Cyclops</a></li>
+</ul>
+<p><a href="https://github.com/aol/simple-react/wiki/1.-simple-react-overview">Old simple-react landing page</a></p>
+<p><a href="http://cdn.oreillystatic.com/en/assets/1/event/154/AOL_s%20return%20to%20open%20source_%20An%20overview%20of%20Java%208%20library%20cyclops-react%20Presentation.pdf">OSCON 2016 slides</a></p>
+<h1><a id="License_81"></a>License</h1>
+<p>cyclops-react is licensed under the Apache 2.0 license.</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+</body></html>
